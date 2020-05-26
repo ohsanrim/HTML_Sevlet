@@ -1,0 +1,76 @@
+<html>
+ <head>
+  <title>HTML 연습</title>	
+  <meta charset="UTF-8">
+  <script>
+  </script>
+  <style>
+	td {
+		color: #99cccc; font-weight: bold;
+	}
+	#hColor { color:#cc99ff; } /*id*/
+	.hColor { color:#6666ff; }  /*class*/ 
+	a:link{ color:black; text-decoration:none;}
+	a:visited{ color:red; text-decoration:none;}/* 손을 떼면*/
+	a:hover{ color:green; text-decoration:underline;}/* 마우스가 올라가면*/
+	a:active{ color:blue; text-decoration:none; }/*마우스를 눌렀을 때*/
+		
+	}
+  </style>
+ </head>
+ <body>
+	<h1 id="hColor">안녕하세요</h1> <!--글자를 굵게 해주고 줄바꿈도 해주며 크기를 키워준다-->
+	<h3 class="hColor">안녕하세요</h3>
+	<h6>안녕하세요</h6>
+	<font size="1" color="#9999cc"><strong>반갑습니다</strong></font><br>
+	<font size="3" color="#9999dd"><strong>반갑습니다</strong></font><br>
+	<font size="5" color="#9999ee"><strong>반갑습니다</strong></font><br>
+	<font size="7" color="#9999ff"><strong>반갑습니다</strong></font><br>
+	<table border="1">
+		<tr>
+		<!--tr이라고 하면 하나의 줄이 만들어짐-->
+			<td>
+				<!--하나의 칸이라고 생각하면 된다-->
+				가나다
+			</td>
+			<td>라마바사</td>
+		</tr>
+		<tr>
+		<!--tr이라고 하면 하나의 줄이 만들어짐-->
+			<td>아자차카</td>
+			<td>타파하</td>
+		</tr>
+		<tr>
+		<!--align=left,center, right"-->
+			<td colspan="2" align="center">ABCDEFG</td> <!--한줄을 없애서 두칸을 합쳐달라는 속성-->
+		</tr>
+		<tr>
+			<td colspan="2" align="center">ABC&nbsp;&nbsp;DEFG</td> <!--한줄을 없애서 두칸을 합쳐달라는 속성-->
+		</tr>
+		<tr>
+			<td colspan="2" align="center">ABC &emsp;DEFG</td> <!--한줄을 없애서 두칸을 합쳐달라는 속성-->
+		</tr>
+	</table>
+
+	<table border="1">
+			<tr>
+				<td rowspan="2" valign="top">
+				호랑이<br>
+				<img src="tomcat.png" width="100px" height="100px"></img>
+				</td>
+				<td>기린</td>
+			</tr>
+			<tr>
+				<td>사자</td>
+			</tr>
+	</table>
+	<br><br>
+	<div style="float:left; border:1px red solid; width:100px; height:100px;">홍길동</div> <!--float을 쓰면 모두 왼쪽에 붙음-->
+	<div style="float:left; border: 1px blue dotted; width:100px; height:100px;">또치</div>
+	<span style="border:1px gray solid;" onclick="javascript:location.href='https://blog.naver.com/korea4xins3/110183928947'">호랑이</span>
+	<span style="border:1px gray dotted;">기린</span>
+	<br><br>
+	<a href="https://www.naver.com/">네이버</a>
+ </body>
+</html>
+<!-- 메타라는건 정보를 준다고 생각하면 됨. 또한 태그 안에 들어가는 건 속성이라고 생각하면 됨-->
