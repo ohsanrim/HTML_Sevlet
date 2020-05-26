@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>input</title>
+  <style>
+	table {
+	background-color:#9ca6e4;
+	}
+  </style>
+ </head>
+ <body>
+ <form method="get" action="http://localhost:8080/testServlet/ResultServlet"> 
+  <table border="1">
+  <tr> <!-- tr은 행(줄) -->
+   <td style="width:80px;height:20px;" align="center">X</td> <!-- td은 열(칸) 길이를 70으로 한다 그러면 아래도 한번에 바뀜 그리고 이름을 가운데에 표시 -->
+   <td> <input type="text" name="x" style="width:150px;height:20px;"> </td> <!-- text로 들어오는 이름은 name로 하겠다 -->
+  </tr>
+
+  <tr> 
+   <td align="center">Y</td> 
+   <td> <input type="text" name="y" style="width:150px;height:20px;"> </td> <!-- text로 들어오는 이름은 age로 하겠다 사이즈 크기는 7이고 3글자 까지만 입력 가능 -->
+  </tr>
+
+  <tr> 
+    <td colspan="2" align="center" style="height:30px;">
+   <input type="submit" value="계산"> &emsp; 
+   <input type="reset" value="취소"> </td> <!-- 어느 페이지로 이동하기 위에 사용하기 위한것은 submit이다. 하지만 현재 페이지의 데이터를 가지고 이동한다. -->
+  </tr>
+  </table>
+ </form> 
+ </body>
+</html>
